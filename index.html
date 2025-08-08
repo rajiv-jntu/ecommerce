@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eggs & Chicken E-commerce</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Eggs & Chicken Store</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="product-list">
+            <h2>Our Products</h2>
+            <div class="product" data-product-id="1">
+                <img src="images/eggs.jpg" alt="Eggs">
+                <h3>Eggs Pack (12 pcs)</h3>
+                <p>Price: ₹50</p>
+                <button onclick="addToCart(1, 'Eggs Pack', 50)">Add to Cart</button>
+            </div>
+            <div class="product" data-product-id="2">
+                <img src="images/chicken.jpg" alt="Chicken">
+                <h3>Fresh Chicken (1 kg)</h3>
+                <p>Price: ₹200</p>
+                <button onclick="addToCart(2, 'Fresh Chicken', 200)">Add to Cart</button>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Eggs & Chicken Store</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
